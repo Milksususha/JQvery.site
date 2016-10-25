@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <title>Сайт</title>
+	<style type="text/css">
+#par1
+{
+position:relative;
+}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+
+   $("#but1").click(function(){
+      $("p").animate({fontSize:150},2000);
+
+      $("p").animate({fontSize:"50"},2000);
+
+   });
+
+});
+</script> 
+
+<script type="text/javascript">   
+$(document).ready(function(){
+
+   $("#but1").click(function(){
+      $("#par1").prepend("<b>jQuery</b> - это  ");
+   });
+   $("#but2").click(function(){
+      $("#par1").append(" значительно упрощающая написание кода.");
+   });
+   $("#but3").click(function(){
+      $("body").append("<h1>Я люблю рисовать.</h1>");
+	       $("h1").css("color","#FF9999");
+   });
+   
+      
+
+});                                           
+</script>                                                          
+
+	<link href="style.css" rel="stylesheet">
+	<link href="dist/css/bootstrap.css" rel="stylesheet">
+	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="dist/css/bootstrap-theme.css" rel="stylesheet">
+	<link href="dist/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+  </head>
+  <body style="background-image: url(1.jpg)">
+  <input id="but1" type="button" value="?" style="color:#FF9999; font-size:60px" />
+	<div class ="bloc1">
+	<img src="image1.jpg" width="300" height="400" />
+	</div>
+	<div class ="bloc2">
+	<img src="image2.jpg" width="300" height="400" />
+	</div>
+	<div class ="bloc3">
+	<img src="image3.jpg" width="300" height="400" />
+	</div>
+	<div class ="bloc4">
+	<img src="image4.jpg" width="300" height="400" />
+	</div>
+	<div class ="bloc5">
+	<p align="center" style="color:#FF9999; font-size:50px">Меня зовут Ксения. Я художник.</p>
+	</div>
+	
+
+<br /><br />
+<input id="but3" type="button" value="Я люблю рисовать" style="color:#FF9999; font-size:50px" />
+
+	
+	<div class ="bloc6">
+	<center>
+	<img src="image5.jpg" width="600" height="400" />
+	</center>
+	</div>
+ </body>
+ </html>
